@@ -4,7 +4,7 @@ def print_last_digit(number):
         digit = number % 10
     else:
         digit = number % -10
+        digit *= -1
 
-
-print("{:d}".format(digit), end='')
-return (digit)
+    print("{:d}".format(digit), end='')
+    return (digit)
