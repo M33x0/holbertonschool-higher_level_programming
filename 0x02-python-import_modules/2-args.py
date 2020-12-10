@@ -10,4 +10,3 @@ if __name__ == "__main__":
         print("{} arguments:".format(len))
     for i in range(1, len+1):
         print("{:d}: {:s}".format(i, sys.argv[i]))
-efefe
