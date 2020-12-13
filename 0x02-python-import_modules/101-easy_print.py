@@ -1,1 +1,1 @@
-import easy_print
+__import__("pythoniscool")
