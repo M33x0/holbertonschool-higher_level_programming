@@ -1,9 +1,9 @@
-#!/usr/bin/python3
-""" Simple rectangle """
+#!/usr/bin/python
+""" Rectangle """
 
 
 class Rectangle:
-    """ class Rectangle defines a rectangle """
+    """ definition of a rectangle """
 
     def __init__(self, width=0, height=0):
         """ initialization """
