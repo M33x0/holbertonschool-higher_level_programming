@@ -23,6 +23,6 @@ Only one arg (a) :
 102
 
 String:
->>> add_integer("Coucou", 4)
+>>> add_integer("ffs", 4)
 Traceback (most recent call last):
 TypeError: a must be an integer
