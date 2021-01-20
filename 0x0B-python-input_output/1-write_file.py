@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """Input/Output """
 
+
 def write_file(filename="", text=""):
    """write a string to a text file and return numbers character written """
    number_of_characters = 0;
