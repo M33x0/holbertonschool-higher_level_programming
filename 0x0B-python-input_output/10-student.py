@@ -18,7 +18,7 @@ class Student:
             for key in attrs:
                 if not type(key) == str:
                     return self.__dict__
-                for name in dictionnary_attributes :
+                for name in dictionnary_attributes:
                     if key == name:
                         dictionnary[key] = dictionnary_attributes[name]
             return dictionnary
