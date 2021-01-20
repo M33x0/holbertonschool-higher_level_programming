@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Input/Output """
+"""Input/Output"""
 
 
 def write_file(filename="", text=""):
