@@ -1,10 +1,10 @@
 #!/usr/bin/python3
-"""Input/Output """
+"""Function that open/write and append a file"""
 
 
 def append_write(filename="", text=""):
-   """append a text file and return numbers character written"""
-   number_of_characters = 0
-   with open(filename, mode='a', encoding='utf-8') as f:
-           number_of_characters = f.write(text)
-   return number_of_characters
+    """ Open/write append text in filename"""
+    character_written = 0
+    with open(filename, mode='a', encoding='utf-8') as f:
+        character_written = f.write(text)
+    return character_written
