@@ -20,7 +20,7 @@ class Student:
                     return self.__dict__
                 for name in dictionnary_attribut:
                     if key == name:
-                        di[key] = dictionnary_attribut[name]
+                        dictionnary[key] = dictionnary_attribut[name]
             return dictionnary
         return self.__dict__
 
