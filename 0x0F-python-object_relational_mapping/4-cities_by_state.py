@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-'''python-ORM'''
+'''python-ORM: List cities by states,ascending order by cities.id'''
 import sys
 import MySQLdb
 
