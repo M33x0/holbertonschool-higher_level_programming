@@ -1,5 +1,5 @@
 """
-   send a post request
+    end a post request
 """
 from urllib import request, parse
 import sys
