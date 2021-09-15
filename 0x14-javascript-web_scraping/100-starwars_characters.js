@@ -1,28 +1,18 @@
 #!/usr/bin/node
-/**
-  request GET to the second argument
-  and print every characters from this movie
-  process.argv[2] = the id of the movie
-**/
-
 const request = require('request');
-const options = {
-  url: 'https://swapi-api.hbtn.io/api/films/' + process.argv[2],
-  method: 'GET'
-};
 
-request(options, function (err, res, body) {
-  const json = JSON.parse(body);
-  for (const character of json.characters) {
-    request(character, function (err, res, body) {
-      if (err) {
-        // pass;
-      }
-      const json = JSON.parse(body);
-      console.log(json.name);
+request('https://swapi-api.hbtn.io/api/films/' + process.argv[2], function (error, response, body) {
+  if (error) {
+    console.log('error:', error);
+  } else {
+    JSON.parse(body).characters.forEach(function (urlChar, callback) {
+      request(urlChar, function (error, response, body) {
+        if (error) {
+          console.log('error:', error);
+        } else {
+          console.log(JSON.parse(body).name);
+        }
+      });
     });
-  }
-  if (err) {
-    // pass;
   }
 });
